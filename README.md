@@ -1,37 +1,60 @@
-# FormCheckAI
+FormChecker AI
 Overview
-AI Plank Trainer is a web-based application that helps users maintain the correct plank form by analyzing an uploaded image using AI. The application uses Flask for the backend, MediaPipe for pose detection, and OpenCV for image processing.
+
+FormChecker AI is a web-based application designed to help users perform exercises safely by analyzing their form through AI-powered pose detection. The app leverages Flask for the backend, MediaPipe for pose detection, and OpenCV for image processing.
+
+What started as a simple plank checker has now grown into a broader project aimed at reducing injuries caused by incorrect exercise form. By providing instant, accessible feedback, FormChecker AI makes proper training guidance available to anyone—not just those with access to personal trainers.
 
 Features
-Upload an image of your plank position.
-Analyze the plank form for correctness.
-Visualize key points and angles on the uploaded image.
-Receive feedback on whether your plank form is correct or not.
+
+Upload an image of your exercise (currently supports planks, with more exercises in progress).
+
+Analyze posture using AI-powered key point detection.
+
+Visualize form with annotated points and angles.
+
+Receive feedback on whether your form is correct or needs adjustment.
+
+Expanding support to up to 10 different exercises (currently in testing).
+
 Project Structure
-app.py: The main Flask application file that handles image upload, analysis, and response.
-index.html: The frontend HTML file for user interaction.
+
+app.py – Main Flask application handling image upload, analysis, and response.
+
+index.html – Frontend for user interaction.
+
 Installation
+
 Clone the repository:
 
+git clone https://github.com/hitansh-m/FormChecker-AI
+cd FormChecker-AI
 
 
-git clone https://github.com/hitansh-m/FormCheckAI
-cd ai-plank-trainer
-Install the required Python packages:
+Install the required dependencies:
+
+pip install -r requirements.txt
 
 
-
-pip install -r requirements.txt (Flask, OpenCV, MediaPipe, NumPy, and OS)
 Run the application:
 
-
-
 python app.py
-Open your web browser and navigate to http://localhost:8888.
+
+
+Navigate to http://localhost:8888 in your browser.
 
 Usage
-Upload Image: On the home page, click on the "Upload Your Plank Image" button and select an image file (JPG, PNG) of your plank position.
-Analyze: After uploading, the app will process the image to detect key points and angles.
-Feedback: The app will display feedback on whether your plank form is correct or needs improvement.
 
-Thank you for using AI Plank Trainer! We hope it helps you achieve the perfect plank form.
+Upload an image of your exercise (JPG/PNG).
+
+The app will process the image, detect key points, and analyze posture.
+
+View visual feedback and suggested improvements.
+
+Roadmap
+
+Expand exercise coverage (squats, push-ups, lunges, etc.).
+
+Improve feedback accuracy with angle-based scoring.
+
+Add support for live video analysis.
