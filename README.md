@@ -23,25 +23,9 @@ app.py – Main Flask application handling image upload, analysis, and response.
 
 index.html – Frontend for user interaction.
 
-Installation
-
-Clone the repository:
-
-git clone https://github.com/hitansh-m/FormChecker-AI
-cd FormChecker-AI
 
 
-Install the required dependencies:
 
-pip install -r requirements.txt
-
-
-Run the application:
-
-python app.py
-
-
-Navigate to http://localhost:8888 in your browser.
 
 Usage
 
@@ -50,6 +34,8 @@ Upload an image of your exercise (JPG/PNG).
 The app will process the image, detect key points, and analyze posture.
 
 View visual feedback and suggested improvements.
+
+
 
 Roadmap
 
